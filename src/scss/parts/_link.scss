@@ -1,0 +1,82 @@
+.link {
+    color: var(--black);
+    display: block;
+    text-align: center;
+    font-size: rel(15);
+    line-height: rel(15);
+    text-decoration: none;
+    transition: var(--transition-time);
+
+    &:hover {
+        color: var(--orange);
+        text-decoration: none;
+        transition: var(--transition-time);
+    }
+
+    &:active {
+        color: var(--black);
+    }
+
+    &__media {
+        width: 74px;
+        height: 74px;
+        border-radius: 200px;
+        border: 1px solid var(--orange);
+        margin: 0 auto rel(10) auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 66px;
+        height: 66px;
+        display: block;
+        overflow: hidden;
+        border-radius: 200px;
+        flex-shrink: 0;
+    }
+
+    &__title {
+
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rel(20);
+        line-height: rel(20);
+
+        &__media {
+            width: 128px;
+            height: 128px;
+            margin-bottom: rel(14);
+        }
+
+
+        &__image {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+    @include media-breakpoint-up(xxl) {
+    }
+}
+
+[data-links] {
+    overflow: visible;
+
+    .swiper-slide {
+        width: 74px;
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .swiper-slide {
+            width: 128px;
+        }
+    }
+}

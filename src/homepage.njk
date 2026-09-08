@@ -1,0 +1,2733 @@
+{% extends "src/elements/_template.njk" %}
+{% set title = "Список страниц" %}
+{% set base = false %}
+{% block main %}
+
+    <div class="section section--first">
+        <div class="container">
+            <div class="swiper" data-links>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__01.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Акции</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__02.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Как заказать</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__03.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Новинки</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__04.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Дегустация</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__05.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Коньяк</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__06.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Белое вино</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__07.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Портвейн</span>
+                        </a><!-- .link -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="link">
+                            <i class="link__media">
+                                <i class="link__image">
+                                    <img src="img/links/link_image__08.jpg" class="img-cover" alt="">
+                                </i>
+                            </i>
+                            <span class="link__title">Красное вино</span>
+                        </a><!-- .link -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Популярные категории</h2>
+                <div class="d-flex align-center column-gap-30">
+                    <button type="button" class="btn-nav" data-categories-prev>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_prev" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-nav" data-categories-next>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_next" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            {% include "src/elements/parts/categories.njk" %}
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Новинки</h2>
+                <div class="d-flex align-center column-gap-30">
+                    <button type="button" class="btn-nav" data-new-prev>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_prev" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-nav" data-new-next>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_next" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper" data-new>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__01.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__03.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--orange">-5%</div>
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__04.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__01.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__03.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--orange">-5%</div>
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item item-md">
+                            <div class="item__media">
+                                <div class="item__image">
+                                    <img src="img/content/items/item_image__04.png" class="img-contain" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__flag">
+                                        <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                    </div>
+                                    <div class="item__vol">40%</div>
+                                </div>
+                                <button type="button" class="item__favorite" data-add-favorite>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="item__purchase" data-item-purchase>
+                                    <span>Беру</span>
+                                </button>
+                                <div class="item__tags item__tags--md">
+                                    <div class="item__tag item__tag--md item__tag--dark">new</div>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item__rating">
+                                    <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                        <div class="rating__body">
+                                            <div class="rating__stars">
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="rating__active" data-rating-active>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating__star">
+                                                    <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                    </div>
+                                </div>
+                                <div class="item__title">
+                                    <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                                </div>
+                                <div class="item__volumes">
+                                    <div class="item__volume">800 мл</div>
+                                </div>
+                                <div class="item__price">
+                                    <div class="item__price-current">1640 р.</div>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Товары со скидкой</h2>
+                <div class="d-none d-md-flex">
+                    <a href="#" class="btn-link">
+                        <span>Смотреть все</span>
+                        <i>
+                            <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/sprites/sprite.svg#nav_next" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="items-grid">
+                <div class="item item-xl">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image_xl__01.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--dark item__tag--md">new</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г.</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__01.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--md item__tag--orange">-13%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1426 р.</div>
+                            <div class="item__price-old">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--md item__tag--orange">-5%</div>
+                            <div class="item__tag item__tag--md item__tag--dark">new</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1140 р.</div>
+                            <div class="item__price-old">1200 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__05.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="offer">
+                <div class="offer__header offer__header--sm">
+                    Неделя континентальной Австралии <span class="color-orange">до -30% на вина марки YALDARA</span>
+                </div>
+                <div class="offer__media">
+                    <div class="offer__image">
+                        <img src="img/offer_image_3.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="offer__content">
+                    <div class="offer__header offer__header--md">
+                        Неделя континентальной Австралии <br><span class="color-orange">до -30% на вина марки YALDARA</span>
+                    </div>
+                    <div class="offer__subtitle">Выберите свой напиток</div>
+                    <div class="offer__slider">
+                        <div class="swiper" data-offer>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item item-offer">
+                                        <div class="item__media">
+                                            <div class="item__image">
+                                                <img src="img/content/items/item_image__01.png" class="img-contain" alt="">
+                                            </div>
+                                            <div class="item__info">
+                                                <div class="item__flag">
+                                                    <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                                </div>
+                                                <div class="item__vol">40%</div>
+                                            </div>
+                                            <button type="button" class="item__favorite" data-add-favorite>
+                                                <i>
+                                                    <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </i>
+                                            </button>
+                                            <button type="button" class="item__purchase" data-item-purchase>
+                                                <span>Беру</span>
+                                            </button>
+                                        </div>
+                                        <div class="item__content">
+                                            <div class="item__rating">
+                                                <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                                    <div class="rating__body">
+                                                        <div class="rating__stars">
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__active" data-rating-active>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                                            </div>
+                                            <div class="item__volumes">
+                                                <div class="item__volume">800 мл</div>
+                                                <div class="item__volume">1.2 л</div>
+                                                <div class="item__volume">1.5 л</div>
+                                            </div>
+                                            <div class="item__price">
+                                                <div class="item__price-current">1640 р.</div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item item-offer">
+                                        <div class="item__media">
+                                            <div class="item__image">
+                                                <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                                            </div>
+                                            <div class="item__info">
+                                                <div class="item__flag">
+                                                    <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                                </div>
+                                                <div class="item__vol">40%</div>
+                                            </div>
+                                            <button type="button" class="item__favorite" data-add-favorite>
+                                                <i>
+                                                    <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </i>
+                                            </button>
+                                            <button type="button" class="item__purchase" data-item-purchase>
+                                                <span>Беру</span>
+                                            </button>
+                                        </div>
+                                        <div class="item__content">
+                                            <div class="item__rating">
+                                                <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                                    <div class="rating__body">
+                                                        <div class="rating__stars">
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__active" data-rating-active>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                                            </div>
+                                            <div class="item__volumes">
+                                                <div class="item__volume">800 мл</div>
+                                                <div class="item__volume">1.2 л</div>
+                                                <div class="item__volume">1.5 л</div>
+                                            </div>
+                                            <div class="item__price">
+                                                <div class="item__price-current">1640 р.</div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item item-offer">
+                                        <div class="item__media">
+                                            <div class="item__image">
+                                                <img src="img/content/items/item_image__03.png" class="img-contain" alt="">
+                                            </div>
+                                            <div class="item__info">
+                                                <div class="item__flag">
+                                                    <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                                </div>
+                                                <div class="item__vol">40%</div>
+                                            </div>
+                                            <button type="button" class="item__favorite" data-add-favorite>
+                                                <i>
+                                                    <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </i>
+                                            </button>
+                                            <button type="button" class="item__purchase" data-item-purchase>
+                                                <span>Беру</span>
+                                            </button>
+                                        </div>
+                                        <div class="item__content">
+                                            <div class="item__rating">
+                                                <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                                    <div class="rating__body">
+                                                        <div class="rating__stars">
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__active" data-rating-active>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                                            </div>
+                                            <div class="item__volumes">
+                                                <div class="item__volume">800 мл</div>
+                                                <div class="item__volume">1.2 л</div>
+                                                <div class="item__volume">1.5 л</div>
+                                            </div>
+                                            <div class="item__price">
+                                                <div class="item__price-current">1640 р.</div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item item-offer">
+                                        <div class="item__media">
+                                            <div class="item__image">
+                                                <img src="img/content/items/item_image__04.png" class="img-contain" alt="">
+                                            </div>
+                                            <div class="item__info">
+                                                <div class="item__flag">
+                                                    <img src="img/flag_italy.svg" class="img-cover" alt="">
+                                                </div>
+                                                <div class="item__vol">40%</div>
+                                            </div>
+                                            <button type="button" class="item__favorite" data-add-favorite>
+                                                <i>
+                                                    <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                    </svg>
+                                                </i>
+                                            </button>
+                                            <button type="button" class="item__purchase" data-item-purchase>
+                                                <span>Беру</span>
+                                            </button>
+                                        </div>
+                                        <div class="item__content">
+                                            <div class="item__rating">
+                                                <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                                    <div class="rating__body">
+                                                        <div class="rating__stars">
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__active" data-rating-active>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating__star">
+                                                                <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                                            </div>
+                                            <div class="item__volumes">
+                                                <div class="item__volume">800 мл</div>
+                                                <div class="item__volume">1.2 л</div>
+                                                <div class="item__volume">1.5 л</div>
+                                            </div>
+                                            <div class="item__price">
+                                                <div class="item__price-current">1640 р.</div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer__text">
+                        «Из рислинга получаются вина непревзойденного качества, вина изысканные, аристократические и, как это не смешно, немодные», — отмечала критик Дженсис Робинсон в книге «Vines, Grapes & Wines». Книга была написана в середине восьмидесятых, когда рислинг переживал не лучшие времена и действительно был аутсайдером. С тех пор все изменилось: вина из этого сорта вернулись в высшую лигу.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="action">
+            <div class="container">
+                <div class="action__main">
+                    <div class="action__content">
+                        <div class="action__header">
+                            <div class="action__title">Все акции в кармане</div>
+                            <div class="action__sale">%</div>
+                        </div>
+                        <div class="action__text">
+                            Будьте всегда в курсе о новинках в мире алкоголя, а так же о всех действующих и будущих акциях Digestive, и не забудьте про секретные рассылки о закрытых распродажах и лимитированной продукции.
+                        </div>
+                    </div>
+                    <div class="action__media">
+                        <div class="action__image">
+                            <img src="img/action_image.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="action__line">
+                            <img src="img/action_line.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="action__button">
+                        <span>Подписаться <br>на акции и новости</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Вас могут заинтересовать</h2>
+                <div class="d-none d-md-flex">
+                    <a href="#" class="btn-link">
+                        <span>Смотреть все</span>
+                        <i>
+                            <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/sprites/sprite.svg#nav_next" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="catalog-links">
+                {% include "src/elements/parts/catalog-items.njk" %}
+            </div>
+            <div class="items-grid">
+                <div class="item item-xl">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image_xl__01.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--dark item__tag--md">new</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г.</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__01.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Коньяк Frapin VSOP Grande Chsmpagne 2020 г</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--md item__tag--orange">-13%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1426 р.</div>
+                            <div class="item__price-old">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__02.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <div class="item__tags item__tags--md">
+                            <div class="item__tag item__tag--md item__tag--orange">-5%</div>
+                            <div class="item__tag item__tag--md item__tag--dark">new</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1140 р.</div>
+                            <div class="item__price-old">1200 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+                <div class="item item-md">
+                    <div class="item__media">
+                        <div class="item__image">
+                            <img src="img/content/items/item_image__05.png" class="img-contain" alt="">
+                        </div>
+                        <div class="item__info">
+                            <div class="item__flag">
+                                <img src="img/flag_italy.svg" class="img-cover" alt="">
+                            </div>
+                            <div class="item__vol">40%</div>
+                        </div>
+                        <button type="button" class="item__favorite" data-add-favorite>
+                            <i>
+                                <svg class="ico-svg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#heart-small" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                        </button>
+                        <button type="button" class="item__purchase" data-item-purchase>
+                            <span>Беру</span>
+                        </button>
+                    </div>
+                    <div class="item__content">
+                        <div class="item__rating">
+                            <div class="rating" data-rating="4.8" data-rating-readonly="true">
+                                <div class="rating__body">
+                                    <div class="rating__stars">
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__active" data-rating-active>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="rating__star">
+                                            <svg class="ico-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="img/sprites/sprite.svg#star" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating__value"><span data-rating-value>4.8</span> (23)</div>
+                            </div>
+                        </div>
+                        <div class="item__title">
+                            <a href="#">Белое вино "Peter Mertes" Alcoholfree White Sweet 0.75 л</a>
+                        </div>
+                        <div class="item__volumes">
+                            <div class="item__volume">800 мл</div>
+                            <div class="item__volume">1.2 л</div>
+                            <div class="item__volume">1.5 л</div>
+                        </div>
+                        <div class="item__price">
+                            <div class="item__price-current">1640 р.</div>
+                        </div>
+                    </div>
+                </div><!-- .item -->
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Популярные бренды</h2>
+            </div>
+            {% include "src/elements/parts/brands.njk" %}
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section-wrapper">
+                {% include "src/elements/parts/how-buy.njk" %}
+                {% include "src/elements/parts/wine-library.njk" %}
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section section--sm">
+        <div class="container">
+            <div class="lead">
+                <span>Мы занимаемся подъемом вашего</span>
+                <span>настроения и приносим радость</span>
+                <span>в ваши дружные компании</span>
+            </div>
+            <div class="data">
+                <div class="data__lead">10+ лет</div>
+                <div class="data__features">
+                    <div class="data__item">
+                        <div class="data__value">90%</div>
+                        <div class="data__text">
+                            наших клиентов возвращаются к нам за покупками после первой покупки
+                        </div>
+                    </div>
+                    <div class="data__item">
+                        <div class="data__value">10 000+</div>
+                        <div class="data__text">
+                            наименований алкоголя уже на нашей витрине, и мы постоянно расширяем ассортимент
+                        </div>
+                    </div>
+                    <div class="data__item">
+                        <div class="data__value">15 секунд</div>
+                        <div class="data__text">
+                            максимальное время ожилания оператора
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section__header section__header--sm">
+                <div class="section__title section__title--sm">Новости из мира алкоголя Виноград не Виноват</div>
+                <div class="d-none d-xl-flex align-center column-gap-30">
+                    <button type="button" class="btn-nav" data-news-prev>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_prev" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-nav" data-news-next>
+                        <svg class="ico-svg" viewBox="0 0 22 12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/sprites/sprite.svg#nav_next" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper" data-news>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item news-item--md">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__01.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__02.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__03.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item news-item--md">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__04.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__05.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__06.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item news-item--md">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__01.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__02.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__03.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item news-item--md">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__04.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__05.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news-item">
+                            <i class="news-item__image">
+                                <img src="img/content/news/news_image__06.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="news-item__title">
+                                Ирландские виски Bohemia. Изысканность в каждой капле.
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block heading %}
+    <div class="primary">
+        <div class="swiper" data-primary>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="primary__item">
+                        <div class="primary__main">
+                            <div class="primary__wrap">
+                                <div class="container">
+                                    <h1 class="primary__header">
+                                        Продукция винокурни<br>
+                                        Castle & Key Distillery
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary__media primary__media--sm">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" style="object-position: 100% 50%;" alt="">
+                        </div>
+                        <div class="primary__media primary__media--xl">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="primary__item">
+                        <div class="primary__main">
+                            <div class="primary__wrap">
+                                <div class="container">
+                                    <h1 class="primary__header">
+                                        Продукция винокурни<br>
+                                        Castle & Key Distillery
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary__media primary__media--sm">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" style="object-position: 100% 50%;" alt="">
+                        </div>
+                        <div class="primary__media primary__media--xl">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="primary__item">
+                        <div class="primary__main">
+                            <div class="primary__wrap">
+                                <div class="container">
+                                    <h1 class="primary__header">
+                                        Продукция винокурни<br>
+                                        Castle & Key Distillery
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary__media primary__media--sm">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" style="object-position: 100% 50%;" alt="">
+                        </div>
+                        <div class="primary__media primary__media--xl">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="primary__item">
+                        <div class="primary__main">
+                            <div class="primary__wrap">
+                                <div class="container">
+                                    <h1 class="primary__header">
+                                        Продукция винокурни<br>
+                                        Castle & Key Distillery
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary__media primary__media--sm">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" style="object-position: 100% 50%;" alt="">
+                        </div>
+                        <div class="primary__media primary__media--xl">
+                            <img src="img/primary_image_xl__01.jpg" class="img-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="primary__control">
+            <div class="container">
+                <div class="primary__wrapper">
+                    <div class="primary__pagination" data-primary-pagination></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block breadcrumb %}
+
+{% endblock %}
+
+

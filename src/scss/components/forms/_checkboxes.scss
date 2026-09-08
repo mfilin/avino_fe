@@ -1,0 +1,90 @@
+.checkbox {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: var(--black);
+    display: flex;
+    column-gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &__input {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + .checkbox__item {
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:indeterminate + .checkbox__item {
+
+            &:before {
+                border-color: var(--blue);
+                background: var(--blue);
+            }
+
+            &:after {
+                top: 7px;
+                width: 10px;
+                height: 2px;
+                background: white;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:disabled + .checkbox__label {
+            opacity: 0.6;
+            cursor: default;
+        }
+    }
+
+    &__item {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: relative;
+        border-radius: 2px;
+        background: white;
+        border: 1px solid var(--black);
+
+        &:before {
+            top: 3px;
+            left: 3px;
+            width: 8px;
+            height: 7px;
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nOCcgaGVpZ2h0PSc3JyB2aWV3Qm94PScwIDAgOCA3JyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNNy42NDM4OSAxLjQ4Nzc0TDIuNjI0OTEgNi41MDY2OEwwLjQxODQ1NyA0LjMwMDI1TDEuMDgxMzcgMy42MzczMUwyLjYyNDkxIDUuMTgwODdMNi45ODA5NiAwLjgyNDgyOUw3LjY0Mzg5IDEuNDg3NzRaJyBmaWxsPScjRUM1QzJBJy8+PC9zdmc+");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__label {
+        display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+        line-height: 15px;
+    }
+}

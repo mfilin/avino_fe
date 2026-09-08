@@ -1,0 +1,64 @@
+// Options
+$enable-grid-classes:         true !default;
+
+$html-font-size:            16px;
+$font-size-base:            1rem !default;
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: calc($spacer / 4),
+    2: calc($spacer / 2),
+    3: $spacer,
+    4: calc($spacer * 1.5),
+    5: calc($spacer * 3),
+) !default;
+
+// Grid
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1240px,
+    xxl: 1600px
+) !default;
+
+$container-max-widths: (
+    sm: 34rem,
+    md: 47rem,
+    lg: 62rem,
+    xl: 77rem,
+    xxl: 97.5rem
+) !default;
+
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           1.875rem !default;
+$grid-row-columns:            6 !default;
+
+$gutters: $spacers !default;
+
+$container-padding-x: $grid-gutter-width !default;
+
+
+:root {
+    --font-primary:         'TildaSans', Arial, sans-serif;
+    --font-secondary:       'TildaSans', Arial, sans-serif;
+
+    --black:                #35393E;
+    --white:                #ffffff;
+    --blue:                 #5373E1;
+    --gray:                 #454B5D;
+    --orange:               #EC5C2A;
+    --orange-hover:         #ff3b00;
+    --beige:                #F6F5F5;
+    --dark:                 #1D1D1B;
+
+    --font-size-base:       1rem;
+    --line-height-base:     1.5;
+
+    --transition-time:      .25s;
+    --shadow:               0 0 0 #fff;
+}

@@ -1,0 +1,155 @@
+.primary {
+    color: white;
+    overflow: hidden;
+    position: relative;
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__media {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+
+        &--sm {
+            display: block;
+
+            .img-cover {
+
+            }
+        }
+
+        &--xl {
+            display: none;
+        }
+    }
+
+    &__main {
+        z-index: 10;
+        min-height: rel(430);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: rel(80) 0;
+    }
+
+    &__header {
+        margin: 0;
+        font-weight: 600;
+        font-size: rel(33);
+        line-height: rel(40);
+
+        br {
+            display: none;
+        }
+    }
+
+    &__control {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+        position: absolute;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__pagination {
+        left: 0;
+        bottom: rel(22);
+        font-size: 0;
+        line-height: 0;
+        display: flex;
+        column-gap: rel(18);
+        align-items: center;
+        position: absolute;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        display: block;
+        flex-shrink: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: transparent;
+        transition: var(--transition-time);
+
+        &:hover {
+            //background-color: white;
+            //transition: var(--transition-time);
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+
+    @include media-breakpoint-up(md) {
+
+        &__media {
+
+            &--sm {
+                display: none;
+            }
+
+            &--xl {
+                display: block;
+            }
+        }
+
+        &__main {
+            min-height: rel(500);
+        }
+
+        &__header {
+            font-size: rel(48);
+            line-height: rel(56);
+
+            br {
+                display: block;
+            }
+        }
+
+        &__pagination {
+            left: auto;
+            right: 0;
+            bottom: rel(60);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        &__main {
+            min-height: rel(664);
+            padding: rel(85) 0;
+        }
+
+
+        &__header {
+            font-size: rel(64);
+            line-height: rel(64);
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+
+        &__header {
+            font-size: rel(85);
+            line-height: rel(85);
+        }
+    }
+}

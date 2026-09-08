@@ -1,0 +1,107 @@
+.sorter {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__header {
+        color: black;
+        font-size: rel(17);
+        line-height: rel(19);
+        white-space: nowrap;
+        cursor: pointer;
+        display: flex;
+        column-gap: rel(14);
+        align-items: center;
+        transition: var(--transition-time);
+    }
+
+    &__arrow {
+        top: 2px;
+        width: 13px;
+        height: 10px;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        flex-shrink: 0;
+        fill: black;
+        position: relative;
+        transition: var(--transition-time);
+    }
+
+    &__content {
+        left: rel(-12);
+        top: calc(100% + 8px);
+        overflow: hidden;
+        min-width:calc(100% + 12px);
+        font-size: rel(15);
+        line-height: rel(21);
+        position: absolute;
+        background-color: var(--beige);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__item {
+        cursor: pointer;
+        white-space: nowrap;
+        color: black;
+        min-height: rel(36);
+        padding: rel(2) rel(12);
+        text-decoration: none;
+        background-color: var(--beige);
+        border: 1px solid rgba(29, 29, 27, 0.05);
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(29, 29, 27, 0.05);
+        }
+
+        &:hover {
+            color: white;
+            background-color: var(--orange);
+        }
+
+        &.active {
+            color: var(--gray-50);
+            background-color: #FAFAF9;
+        }
+    }
+
+    &:hover {
+
+        .sorter {
+
+            &__header {
+                color: var(--orange);
+                transition: var(--transition-time);
+            }
+
+            &__arrow {
+                fill: var(--orange);
+                transition: var(--transition-time);
+            }
+        }
+
+    }
+
+    &.open {
+        z-index: 100;
+
+        .sorter {
+
+            &__content {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &__arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+    }
+}

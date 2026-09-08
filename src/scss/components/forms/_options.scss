@@ -1,0 +1,70 @@
+.option-group {
+    display: flex;
+    column-gap: rel(10);
+    align-items: center;
+}
+
+.option {
+    display: block;
+    color: var(--black);
+    font-weight: 400;
+    font-size: rel(15);
+    line-height: rel(20);
+    position: relative;
+
+    input {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + span {
+            color: var(--orange);
+            border-color: var(--orange);
+        }
+    }
+
+    span {
+        width: rel(50);
+        height: rel(50);
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--sm {
+        font-size: rel(14);
+        line-height: rel(20);
+
+        span {
+            width: rel(50);
+            height: rel(40);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rel(16);
+        line-height: rel(20);
+
+        span {
+            width: rel(56);
+            height: rel(56);
+        }
+
+        &--sm {
+            font-size: rel(14);
+            line-height: rel(20);
+
+            span {
+                width: rel(54);
+                height: rel(40);
+            }
+        }
+    }
+}

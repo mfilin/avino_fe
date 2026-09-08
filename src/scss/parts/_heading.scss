@@ -1,0 +1,91 @@
+.heading {
+    color: white;
+    overflow: hidden;
+    position: relative;
+    font-size: rel(15);
+    line-height: rel(18);
+    background-color: rgba(53, 57, 62, 0.25);
+
+    &__body {
+        z-index: 10;
+        position: relative;
+    }
+
+    &__main {
+        min-height: rel(350);
+        padding-top: rel(80);
+        padding-bottom: rel(24);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__media {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+
+        &--md {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: rel(55);
+        line-height: rel(55);
+    }
+
+    &__text {
+        max-width: rel(860);
+        margin-top: rel(10);
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rel(16);
+        line-height: rel(19);
+
+        &__media {
+
+            &--sm {
+                display: none;
+            }
+
+            &--md {
+                display: block;
+            }
+        }
+
+        &__main {
+            min-height: rel(400);
+            padding-top: rel(90);
+            padding-bottom: rel(40);
+        }
+
+        &__text {
+            margin-top: rel(20);
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        &__main {
+            min-height: rel(420);
+            padding-top: rel(180);
+        }
+
+        &__title {
+            font-size: rel(75);
+            line-height: rel(75);
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {}
+}

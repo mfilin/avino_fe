@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta property="og:image" content="images/dest/preview.jpg">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/main.min.css">
+    {% endblock %}
+</head>
+<body{% if base %} class="page-base"{% endif %}>
+<div class="root">
+    {% block header %}
+        {% include "src/elements/header.njk" %}
+    {% endblock %}
+    {% block top_nav %}
+        {% include "src/elements/parts/top-nav.njk" %}
+    {% endblock %}
+    {% block nav %}
+        {% include "src/elements/parts/nav.njk" %}
+    {% endblock %}
+    {% block nav_mobile %}
+        {% include "src/elements/parts/nav_mobile.njk" %}
+    {% endblock %}
+    {% block heading %}
+    {% endblock %}
+    {% block main %}
+        <section class="main">
+            <div class="container">
+                {% block breadcrumb %}
+                {% endblock %}
+                {% block content %}
+                {% endblock %}
+            </div>
+        </section>
+    {% endblock %}
+    {% block footer %}
+        {% include "src/elements/footer.njk" %}
+    {% endblock %}
+    {% block modal %}
+        {% include "src/elements/parts/modal.njk" %}
+    {% endblock %}
+    {% block aside %}
+    {% endblock %}
+
+    {% block stories %}
+    {% endblock %}
+</div>
+{% block scripts %}
+    <script src="js/app.min.js"></script>
+{% endblock %}
+{% block pageScript %}
+
+{% endblock %}
+</body>
+</html>

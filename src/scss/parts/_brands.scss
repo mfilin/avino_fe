@@ -1,0 +1,67 @@
+.brand {
+    width: rel(100);
+    height: rel(100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--beige);
+
+    &__logo {
+        width: rel(56);
+        height: rel(56);
+        display: block;
+        flex-shrink: 0;
+    }
+
+    img {
+        mix-blend-mode: multiply;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: rel(160);
+        height: rel(160);
+
+        &__logo {
+            width: rel(90);
+            height: rel(90);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 100%;
+        height: rel(166);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        width: 100%;
+        height: rel(213);
+
+        &__logo {
+            width: rel(122);
+            height: rel(122);
+        }
+    }
+}
+
+[data-brands] {
+    overflow: visible;
+
+    .swiper-slide {
+        width: rel(100);
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .swiper-slide {
+            width: rel(160);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        .swiper-slide {
+            width: auto;
+        }
+    }
+    @include media-breakpoint-up(xxl) {}
+}

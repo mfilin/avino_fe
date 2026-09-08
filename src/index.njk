@@ -1,0 +1,148 @@
+{% extends "src/elements/_template.njk" %}
+{% set title = "Список страниц" %}
+{% set base = true %}
+{% block content %}
+    <h1 class="mb-40">{{ title }}</h1>
+
+    <ul>
+        <li>
+            <a href="homepage.html">Главная</a>
+        </li>
+        <li>
+            <a href="catalog_v3.html">Каталог</a>
+        </li>
+        <li>
+            <a href="catalog.html">Раздел каталога 1</a>
+        </li>
+        <li>
+            <a href="catalog_v2.html">Раздел каталога 2</a>
+        </li>
+        <li>
+            <a href="product.html">Карточка товара</a>
+        </li>
+        <li>
+            <a href="product_v2.html">Карточка товара v2</a>
+        </li>
+    </ul>
+
+    <h2>Modal</h2>
+    <ul>
+        <li>
+            <a href="#" data-cart-open>Товар добавлен в корзину</a>
+        </li>
+        <li>
+            <a href="#" data-card-open>Карточка товара</a>
+        </li>
+        <li>
+            <a href="#" data-stories-toggle>Сторисы</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Главная</a>
+        </li>
+        <li class="breadcrumb__item">
+            <span class="breadcrumb__active">{{ title }}</span>
+        </li>
+    </ol>
+{% endblock %}
+
+
+{% block aside %}
+    {% include "src/elements/parts/filter.njk" %}
+    {% include "src/elements/parts/side-cart.njk" %}
+    {% include "src/elements/parts/product-card.njk" %}
+{% endblock %}
+
+{% block stories %}
+    <div class="stories">
+        <div class="stories__container">
+            <div class="stories__body">
+                <div class="swiper" data-stories>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="stories__item">
+                                <i class="stories__media">
+                                    <img src="img/stories/stories_01.jpg" class="img-cover" alt="">
+                                </i>
+                                <i class="stories__link">
+                                    <span>ПЕРЕЙТИ К ТОВАРУ</span>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 22 11" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#link_arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="stories__item">
+                                <i class="stories__media">
+                                    <img src="img/stories/stories_02.jpg" class="img-cover" alt="">
+                                </i>
+                                <i class="stories__link">
+                                    <span>ПЕРЕЙТИ К ТОВАРУ</span>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 22 11" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#link_arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="stories__item">
+                                <i class="stories__media">
+                                    <img src="img/stories/stories_03.jpg" class="img-cover" alt="">
+                                </i>
+                                <i class="stories__link">
+                                    <span>ПЕРЕЙТИ К ТОВАРУ</span>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 22 11" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#link_arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="stories__item">
+                                <i class="stories__media">
+                                    <img src="img/stories/stories_04.jpg" class="img-cover" alt="">
+                                </i>
+                                <i class="stories__link">
+                                    <span>ПЕРЕЙТИ К ТОВАРУ</span>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 22 11" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#link_arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="stories__item">
+                                <i class="stories__media">
+                                    <img src="img/stories/stories_05.jpg" class="img-cover" alt="">
+                                </i>
+                                <i class="stories__link">
+                                    <span>ПЕРЕЙТИ К ТОВАРУ</span>
+                                    <i>
+                                        <svg class="ico-svg" viewBox="0 0 22 11" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/sprites/sprite.svg#link_arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories__pagination" data-stories-pagination></div>
+            </div>
+        </div>
+        <div class="stories__overlay" data-stories-toggle></div>
+    </div><!-- .stories -->
+{% endblock %}

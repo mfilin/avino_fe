@@ -1,0 +1,55 @@
+.breadcrumb {
+    padding: 0;
+    list-style: none;
+    font-size: rel(14);
+    line-height: rel(16);
+    margin: 0 0 rel(30) 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__item {
+        display: block;
+
+        &:not(:last-child) {
+            &::after {
+                content: '/';
+                padding: 0 rel(6);
+                display: inline-block;
+            }
+        }
+    }
+
+    &__link {
+        color: var(--black);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--black);
+            text-decoration: underline;
+        }
+    }
+
+    &__active {
+        color: rgba(53, 57, 62, 0.4);
+    }
+
+    &--white {
+        color: white;
+
+        .breadcrumb {
+
+            &__link {
+                color: var(--white);
+            }
+
+            &__active {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}

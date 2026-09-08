@@ -1,0 +1,94 @@
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input, textarea {
+    outline: none;
+    &:focus:required:invalid { border-color: red }
+    &:required:valid { border-color: green }
+}
+
+:active, :hover, :focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+
+option::selection {background: #ccc;}
+option::-moz-selection {background: #ccc;}
+option::-webkit-selection {background: #ccc; color:#fff;}
+
+.field {
+    width: 100%;
+    display: block;
+    font-weight: 400;
+    position: relative;
+    background: transparent;
+    $input-selector: "input[type=text], input[type=email], input[type=password], textarea";
+
+    #{$input-selector} {
+        margin: 0;
+        width: 100%;
+        height: rel(48);
+        outline: none;
+        color: #5b3d38;
+        box-shadow: none;
+        font-weight: 400;
+        font-size: rel(16);
+        line-height: rel(24);
+        padding: rel(11) rel(16);
+        background: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        border: rel(1) solid #5b3d38;
+
+        &::placeholder {
+            color: #5b3d38;
+        }
+
+        &::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        &:focus,
+        &:active {
+            outline: none;
+
+            &::placeholder {
+                color:transparent;
+            }
+        }
+
+        &.error {
+            border-color: red !important;
+        }
+    }
+
+    textarea {
+        height: auto;
+        resize: none;
+    }
+
+    &__icon {
+        fill: #5b3d38;
+        font-size: 0;
+        line-height: 0;
+        top: calc(50% - 0.75rem);
+        left: rel(16);
+        height: rel(24);
+        position: absolute;
+        display: inline-block;
+    }
+
+    &--icon {
+
+        #{$input-selector} {
+            padding-left: rel(48);
+        }
+    }
+}

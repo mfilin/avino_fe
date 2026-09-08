@@ -1,0 +1,86 @@
+.select {
+    position: relative;
+
+    &__header {
+        height: rel(40);
+        font-size: rel(14);
+        line-height: rel(20);
+        position: relative;
+        color: var(--orange);
+        border: 1px solid var(--orange);
+        padding: rel(4) rel(32) rel(4) rel(14);
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            right: 14px;
+            top: calc(50% - 3px);
+            content: '';
+            width: 10px;
+            height: 6px;
+            display: block;
+            position: absolute;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAnIGhlaWdodD0nNicgdmlld0JveD0nMCAwIDEwIDYnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTkgMUw1IDVMMSAxJyBzdHJva2U9JyNFQzVDMkEnLz48L3N2Zz4=");
+        }
+    }
+
+    &__dropdown {
+        left: 0;
+        top: calc(100% + 4px);
+        padding: 0;
+        z-index: 100;
+        min-width: 100%;
+        font-size: rel(14);
+        line-height: rel(20);
+        position: absolute;
+        background-color: white;
+        border: 1px solid var(--orange);
+        opacity: 0;
+        visibility: hidden;
+
+        &--top {
+            top: auto;
+            bottom: calc(100% + 4px);
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        color: var(--text-primary);
+        background-color: white;
+        transition: var(--transition-time);
+        min-height: rel(32);
+        padding: rel(4) rel(14);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--orange);
+            background-color: var(--beige);
+            transition: var(--transition-time);
+        }
+    }
+
+
+    &.open {
+        z-index: 100;
+
+        .select {
+
+            &__header {
+
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__dropdown {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

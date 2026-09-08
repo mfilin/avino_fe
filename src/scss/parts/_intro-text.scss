@@ -1,0 +1,39 @@
+.intro-text {
+    font-size: rel(15);
+    line-height: rel(21);
+    display: flex;
+    row-gap: rel(24);
+    flex-direction: column;
+
+    p {
+        margin-bottom: rel(22);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__media {
+        width: rel(116);
+        display: block;
+        flex-shrink: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rel(16);
+        line-height: rel(22);
+
+        &__media {
+            width: rel(208);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        flex-direction: row;
+        column-gap: rel(40);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        column-gap: rel(56);
+    }
+}

@@ -1,0 +1,140 @@
+.how-buy {
+    color: white;
+    background-color: var(--orange);
+    padding: rel(60) rel(15) rel(40) rel(15);
+
+    &__header {
+        position: relative;
+        margin-bottom: rel(36);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__media {
+        overflow: hidden;
+        width: rel(216);
+        height: rel(148);
+        border-radius: rel(88);
+    }
+
+    &__title {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        position: absolute;
+        font-weight: 600;
+        text-align: center;
+        font-size: rel(58);
+        line-height: rel(148);
+    }
+
+    &__content {
+        display: grid;
+        grid-row-gap: rel(40);
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        text-align: center;
+        font-size: rel(18);
+        line-height: rel(20);
+
+        br {
+            display: none;
+        }
+    }
+
+    &__num {
+        color: white;
+        width: rel(36);
+        height: rel(36);
+        font-size: rel(15);
+        line-height: rel(20);
+        border-radius: 50%;
+        margin: 0 auto rel(15) auto;
+        border: 1px solid white;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__lead {
+        font-weight: 500;
+        font-size: rel(20);
+        line-height: rel(20);
+        margin-bottom: rel(12);
+    }
+
+    &__text {
+        color: #EEEEEE;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: rel(80) rel(20) rel(50) rel(20);
+
+        &__content {
+            grid-column-gap: rel(14);
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        &__media {
+            overflow: hidden;
+            width: rel(300);
+            height: rel(206);
+            border-radius: rel(104);
+        }
+
+        &__title {
+            font-size: rel(70);
+            line-height: rel(206);
+        }
+
+        &__lead {
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: rel(90) rel(20) rel(50) rel(20);
+
+        &__media {
+            overflow: hidden;
+            width: rel(366);
+            height: rel(252);
+            border-radius: rel(126);
+        }
+
+        &__title {
+            white-space: nowrap;
+            font-size: rel(85);
+            line-height: rel(252);
+        }
+
+        &__text {
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+
+        &__title {
+            font-size: rel(100);
+            line-height: rel(252);
+        }
+
+        &__lead {
+            font-size: rel(25);
+            line-height: rel(25);
+        }
+    }
+}

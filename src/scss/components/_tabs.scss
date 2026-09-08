@@ -1,0 +1,125 @@
+[data-tabs-target] {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+
+
+.tabs {
+    position: relative;
+
+    &__header {
+        margin-bottom: rel(32px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #f1f1f1;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+
+    }
+
+    &__btn {
+        padding: size-rel(12px);
+        border: none;
+        color: black;
+        cursor: pointer;
+        font-weight: 600;
+        font-size:  size-rel(12px);
+        line-height: size-rel(20px);
+        text-align: center;
+        letter-spacing: 0.06em;
+        background-color: #f0f0f0;
+        border-radius: 6px 6px 0 0;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+
+        &.active {
+            color: white;
+            background-color: black;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            pointer-events: none;
+        }
+    }
+
+    &__content {
+        background-color: #fff;
+    }
+}
+
+.tabs-header {
+    margin-bottom: rel(25);
+
+    .swiper {
+        overflow: visible;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: rel(40);
+    }
+}
+
+.tabs-nav {
+    opacity: .5;
+    padding: 0;
+    border: none;
+    outline: none;
+    display: block;
+    color: var(--black);
+    font-weight: 700;
+    font-size: rel(16);
+    line-height: rel(24);
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: transparent;
+    transition: var(--transition-time);
+
+    &:hover {
+        opacity: .7;
+        transition: var(--transition-time);
+    }
+
+    &.active {
+        opacity: 1;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rel(20);
+        line-height: rel(30);
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: rel(25);
+        line-height: rel(30);
+    }
+}

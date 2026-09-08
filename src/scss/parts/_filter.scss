@@ -1,0 +1,313 @@
+.filter {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 970;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: .3s;
+
+    &__container {
+        width: 100%;
+        position: relative;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: rel(30);
+        line-height: rel(30);
+        padding-top: rel(26);
+        padding-bottom: rel(26);
+    }
+
+    &__main {
+        flex-grow: 1;
+        position: relative;
+    }
+
+    &__footer {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        position: absolute;
+        background-color: white;
+        padding: rel(10) rel(15);
+    }
+
+    &__scroll {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        overflow-y: auto;
+        position: absolute;
+        padding: 0 rel(15) rel(70) rel(15);
+        -webkit-overflow-scrolling: touch;
+        will-change: scroll-position;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--beige);
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: white;
+            border: 1px solid white;
+        }
+    }
+
+    .btn-close {
+        top: rel(25);
+        right: rel(15);
+        position: absolute;
+    }
+
+    &__categories {
+        margin-bottom: rel(30);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rel(16);
+        line-height: rel(24);
+    }
+
+    &__content {
+        padding-top: rel(16);
+    }
+
+    &__list {
+        display: flex;
+        row-gap: rel(12);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__range {
+        margin-bottom: rel(30);
+    }
+
+    &__options {
+        display: flex;
+        row-gap: rel(15);
+        flex-direction: column;
+    }
+
+    &__group {
+
+        &.open {
+
+            .filter {
+
+                &__icon {
+
+                    &:after {
+                        transform: rotate(360deg);
+                        transition: var(--transition-time);
+                    }
+
+                    &:before {
+                        transform: rotate(-180deg);
+                        transition: var(--transition-time);
+                    }
+                }
+            }
+        }
+    }
+
+    &__toggle {
+        min-height: rel(24);
+        display: flex;
+        column-gap: rel(20);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: rel(24);
+        height: rel(24);
+        display: block;
+        position: relative;
+        flex-shrink: 0;
+
+        &:after,
+        &:before {
+            top: calc(50% - 1px);
+            left: calc(50% - 6px);
+            content: '';
+            width: 12px;
+            height: 2px;
+            border-radius: 2px;
+            position: absolute;
+            background-color: var(--black);
+            transition: var(--transition-time);
+        }
+
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        right: auto;
+        width: rel(464);
+
+        &__header {
+            padding-top: rel(64);
+            padding-bottom: rel(30);
+        }
+
+        &__scroll {
+            padding: 0 rel(32) rel(90) rel(32);
+        }
+
+        &__footer {
+            padding: rel(20) rel(32) rel(20) rel(32);
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: rel(18);
+            line-height: rel(24);
+        }
+
+        &__content {
+            padding-top: rel(18);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: auto;
+        justify-content: flex-end;
+        right: calc(50% + 101px);
+
+        .btn-close {
+            top: rel(20);
+            left: rel(15);
+            right: auto;
+        }
+
+        &__container {
+            width: 515px;
+            flex-shrink: 0;
+        }
+
+        &__scroll {
+            padding: 0 rel(32) rel(110) rel(15);
+        }
+
+        &__footer {
+            padding-left: rel(15);
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        right: calc(50% + 265px);
+
+        .btn-close {
+            top: rel(35);
+            left: rel(35);
+        }
+
+        &__scroll {
+            padding: 0 rel(32) rel(200) rel(15);
+        }
+
+        &__header {
+            padding-top: rel(120);
+        }
+
+        &__footer {
+            padding-bottom: rel(70);
+        }
+    }
+
+}
+
+.catalog-grid {
+}
+
+.filter-backdrop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 950;
+    position: fixed;
+    background-color: rgba(29, 29, 27, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.range {
+
+    &__title {
+        opacity: .5;
+        font-size: rel(13);
+        line-height: rel(21);
+        color: var(--black);
+        margin-bottom: rel(8);
+    }
+
+    &__values {
+        margin-bottom: rel(12);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__value {
+        height: rel(26);
+        font-size: rel(12);
+        line-height: rel(20);
+        border-radius: rel(20);
+        padding: rel(2) rel(12);
+        background-color: rgba(29, 29, 27, 0.05);
+        display: flex;
+        column-gap: rel(4);
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__label {
+        opacity: .5;
+    }
+
+    &__slider {
+        height: 12px;
+        padding: 0 rel(4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.filter-open {
+    overflow: hidden;
+
+    .filter {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        transition: .3s;
+    }
+    .filter-backdrop {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s;
+    }
+
+}

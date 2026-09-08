@@ -1,0 +1,119 @@
+.wine-library {
+    color: white;
+    min-height: rel(576);
+    position: relative;
+    padding: rel(50) rel(15) rel(115) rel(15);
+    display: flex;
+    row-gap: rel(50);
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__bg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+    }
+
+    &__media {
+        z-index: 10;
+        position: relative;
+    }
+
+    &__content {
+        z-index: 10;
+        font-size: rel(18);
+        line-height: rel(20);
+        position: relative;
+
+        p {
+            margin-bottom: rel(15);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: rel(35);
+        line-height: rel(35);
+        margin-bottom: rel(20);
+        color: var(--orange);
+    }
+
+    &__button {
+        z-index: 20;
+        left: rel(15);
+        bottom: rel(-54);
+        color: white;
+        width: rel(124);
+        height: rel(124);
+        font-size: rel(15);
+        line-height: rel(20);
+        text-decoration: none;
+        border-radius: rel(200);
+        background-color: var(--orange);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-time);
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+            background-color: var(--orange-hover);
+            transition: var(--transition-time);
+        }
+    }
+
+    &__icon {
+        width: rel(35);
+        display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+        min-height: rel(600);
+        padding: rel(60) rel(40) rel(160) rel(40);
+
+        &__icon {
+            width: rel(56);
+        }
+
+        &__header {
+            font-size: rel(50);
+            line-height: rel(50);
+            margin-bottom: rel(30);
+        }
+
+        &__content {
+            z-index: 10;
+            font-size: rel(20);
+            line-height: rel(20);
+        }
+
+        &__button {
+            left: rel(40);
+            bottom: rel(-18);
+            width: rel(140);
+            height: rel(140);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: rel(770);
+    }
+
+    @include media-breakpoint-up(xxl) {
+
+        &__header {
+            font-size: rel(70);
+            line-height: rel(72);
+            margin-bottom: rel(30);
+        }
+    }
+}

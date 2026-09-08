@@ -1,0 +1,106 @@
+.top-nav {
+    left: 0;
+    right: 0;
+    z-index: 700;
+    top: rel(95);
+    display: none;
+    position: fixed;
+    transition: .2s;
+
+    &__menu {
+        margin: 0;
+        padding: rel(12) 0;
+        list-style: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        column-gap: rel(70);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        color: white;
+        display: block;
+        font-weight: 500;
+        font-size: rel(13);
+        line-height: rel(16);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--orange);
+            text-decoration: none;
+            transition: var(--transition-time);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+        transform: translateY(0px);
+        transition: .2s;
+    }
+}
+
+.nav-toggle {
+    color: white;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: rel(13);
+    line-height: rel(16);
+    background: transparent;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: rel(16);
+    align-items: center;
+    transition: var(--transition-time);
+
+    &__icon {
+        display: block;
+        width: rel(42);
+        height: rel(32);
+        position: relative;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: var(--transition-time);
+        flex-shrink: 0;
+
+        &:after,
+        &:before {
+            left: calc(50% - 9px);
+            width: 18px;
+            height: 1px;
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: white;
+            transition: var(--transition-time);
+        }
+
+        &:after {
+            top: calc(50% - 4px);
+        }
+
+        &:before {
+            top: calc(50% + 3px);
+        }
+    }
+
+    &:hover {
+        color: var(--orange);
+        transition: var(--transition-time);
+
+        .nav-toggle__icon {
+            border-color: var(--orange);
+            transition: var(--transition-time);
+
+            &:after,
+            &:before {
+                background-color: var(--orange);
+                transition: var(--transition-time);
+            }
+        }
+    }
+}
